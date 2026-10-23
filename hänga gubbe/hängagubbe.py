@@ -1,4 +1,10 @@
-ordet=input('Vilket ord ska din motståndare gissa på? ').lower()
+while True:
+    ordet=input('Vilket ord ska din motståndare gissa på? ').lower()
+    if ordet.isalpha():
+        break
+    else:
+        print("Använd inga siffror, bara bokstäver tack.")
+
 gissningar=[' ']
 felgissningar=0
 maxgissningar=6
