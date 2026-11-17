@@ -1,6 +1,6 @@
 while True:
     ordet=input('Vilket ord ska din motståndare gissa på? ').lower()
-    if ordet.isalpha():
+    if ordet.replace(" ", "") .isalpha():
         break
     else:
         print("Använd inga siffror, bara bokstäver tack.")
